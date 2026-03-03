@@ -4,17 +4,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TODO: Título da página</title> 
+  <title>TODO: Título da página</title>
   <style>
-    *{
+    * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
-      color:aliceblue;
+      color: aliceblue;
       background-color: rgb(0, 0, 0);
       font-family: system-ui, Arial, sans-serif;
       line-height: 1.5;
+    }
+
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .box {
+      background: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgba(240, 240, 255, 0.30);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .header-interno p{
+      margin: 0;
+      color: #b3b4b6;
+    }
+    p{
+      color: aqua;
+    }
+    #apresentacao {
+      border-left: 8px solid rgb(255, 221, 0);
+    }
+
+    .nav{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: rgb(255, 221, 0);
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    } 
+
+
+    h1, h2 {
+      color: rgb(255, 221, 0);
+      margin: 0, 0 8px;
+    }
+    .nav-link:hover{
+       background: rgb(255, 200, 0);
     }
   </style>
 </head>
@@ -38,30 +92,30 @@
     </nav>
 
     <main id="conteudo">
-      <div class="row" id="linha-1">
-        <section class="box-panel" id="apresentacao">
-          <h2> Quem é o Batman?</h2>
-          <p>
-            Batman (Bruce Wayne) é o personagem da DC Comics que atua como justiceiro de Gotham.<br> Ele não tem
-            superpoderes: sua força está em<strong> treinamento</strong><em>inteligência</em> e recursos (ou seja,
-            rico).
-          </p>
 
-          <p>
-            Nas histórias, Gotham costuma representar problemas sociais reais:
-            desigualdade, corrupção e violência urbana. <br>Muitos quadrinhos usam Batman
-            como forma de <strong>crítica social</strong>, mostrando como decisões políticas, interesses econômicos,
-            falhas nas instituições e o autoritarismo afetam o cotidiano das pessoas, especialmente nas periferias.
-          </p>
+      <section class="box" id="apresentacao">
+        <h2> Quem é o Batman?</h2>
+        <p>
+          Batman (Bruce Wayne) é o personagem da DC Comics que atua como justiceiro de Gotham.<br> Ele não tem
+          superpoderes: sua força está em<strong> treinamento</strong><em> inteligência</em> e recursos (ou seja,
+          rico).
+        </p>
 
-        </section>
-      </div>
+        <p>
+          Nas histórias, Gotham costuma representar problemas sociais reais:
+          desigualdade, corrupção e violência urbana. <br>Muitos quadrinhos usam Batman
+          como forma de <strong>crítica social</strong>, mostrando como decisões políticas, interesses econômicos,
+          falhas nas instituições e o autoritarismo afetam o cotidiano das pessoas, especialmente nas periferias.
+        </p>
+
+      </section>
+
       <section class="box" id="galeria">
         <h2>Galeria</h2>
         <div class="gallery" id="galeria-image">
-          <img class="bat-img" src="Batman1.png" alt="Batman Aura." width="320" height="320">
-          <img class="bat-img" src="Batman2.jpg" alt="Batman Tenebras." width="320" height="320">
-          <img class="bat-img" src="Batman3.jpg" alt="Batman Solidão." width="320" height="320">
+          <img class="bat-img" src="Batman1.png" alt="Batman Aura." width="200" height="300">
+          <img class="bat-img" src="Batman2.jpg" alt="Batman Tenebras." width="200" height="300">
+          <img class="bat-img" src="Batman3.jpg" alt="Batman Solidão." width="200" height="300">
         </div>
       </section>
 
